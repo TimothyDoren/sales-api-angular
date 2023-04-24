@@ -1,3 +1,5 @@
+import { Customer } from "../customer/customer.class";
+
 export class Order {
 
      id: number = 0;
@@ -7,5 +9,5 @@ export class Order {
     total: number = 0;
 
     customerId: number = 0;
-    customer = null;
+    customer: Customer | null = null;
 }
