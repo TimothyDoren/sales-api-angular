@@ -21,7 +21,7 @@ export class EmployeeService {
     return this.http.get(`${this.baseurl}/${id}`) as Observable<Employee>
   }
   login(email: string, password: string): Observable<Employee> {
-    return this.http.get(`${this.baseurl}/${email}/${password}`) as Observable<Employee>
+    return this.http.get(`${this.baseurl}/login/${email}/${password}`) as Observable<Employee>
   }
   create(empl: Employee): Observable<Employee> {
     return this.http.post(`${this.baseurl}`, empl) as Observable<Employee>
