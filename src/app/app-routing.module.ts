@@ -6,6 +6,8 @@ import { EmployeeCreateComponent } from './employee/employee-create/employee-cre
 import { EmployeeDetailComponent } from './employee/employee-detail/employee-detail.component';
 import { EmployeeLoginComponent } from './employee/employee-login/employee-login.component';
 import { OrderListComponent } from './order/order-list/order-list.component';
+import { OrderDetailComponent } from './order/order-detail/order-detail.component';
+import { OrderCreateComponent } from './order/order-create/order-create.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/employee/list", pathMatch: "full" },
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: "employee/detail/:id", component: EmployeeDetailComponent },
   { path: "employee/change/:id", component: EmployeeChangeComponent },
   { path: "employee/login", component: EmployeeLoginComponent },
-  { path: "order/list", component: OrderListComponent}
+  { path: "order/list", component: OrderListComponent},
+  { path: "order/detail/:id", component: OrderDetailComponent},
+  { path: "order/create", component: OrderCreateComponent}
 ];
 
 @NgModule({

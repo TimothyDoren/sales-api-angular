@@ -11,7 +11,9 @@ import { EmployeeCreateComponent } from './employee/employee-create/employee-cre
 import { EmployeeChangeComponent } from './employee/employee-change/employee-change.component';
 import { EmployeeLoginComponent } from './employee/employee-login/employee-login.component';
 import { MenubarComponent } from './menu/menubar/menubar.component';
-import { OrderListComponent } from './order/order-list/order-list.component'
+import { OrderListComponent } from './order/order-list/order-list.component';
+import { OrderDetailComponent } from './order/order-detail/order-detail.component';
+import { OrderCreateComponent } from './order/order-create/order-create.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { OrderListComponent } from './order/order-list/order-list.component'
     EmployeeChangeComponent,
     EmployeeLoginComponent,
     MenubarComponent,
-    OrderListComponent
+    OrderListComponent,
+    OrderDetailComponent,
+    OrderCreateComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
