@@ -1,4 +1,5 @@
 import { Customer } from "../customer/customer.class";
+import { Orderline } from "../orderline/orderline.class";
 
 export class Order {
 
@@ -7,7 +8,9 @@ export class Order {
     description: string = "";
     status: string = "NEW";
     total: number = 0;
+    orderlines!: Orderline[];
 
     customerId: number = 0;
     customer: Customer | null = null;
+    customerName!: string;
 }

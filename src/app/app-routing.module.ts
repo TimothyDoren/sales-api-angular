@@ -9,6 +9,8 @@ import { OrderListComponent } from './order/order-list/order-list.component';
 import { OrderDetailComponent } from './order/order-detail/order-detail.component';
 import { OrderCreateComponent } from './order/order-create/order-create.component';
 import { OrderChangeComponent } from './order/order-change/order-change.component';
+import { OrderLinesComponent } from './order/order-lines/order-lines.component';
+//import { E404Component } from './misc/E404Component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/employee/list", pathMatch: "full" },
@@ -21,7 +23,10 @@ const routes: Routes = [
   { path: "order/list", component: OrderListComponent},
   { path: "order/detail/:id", component: OrderDetailComponent},
   { path: "order/create", component: OrderCreateComponent},
-  { path: "order/change/:id", component: OrderChangeComponent}
+  { path: "order/change/:id", component: OrderChangeComponent},
+  { path: "order/lines/:id", component: OrderLinesComponent},
+
+//  {path: "**", component: E404Component}
 ];
 
 @NgModule({
