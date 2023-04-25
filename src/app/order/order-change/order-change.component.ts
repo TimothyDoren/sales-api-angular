@@ -14,7 +14,7 @@ export class OrderChangeComponent {
 
   order: Order = new Order();
   customers!: Customer[];
-  pageTitle = "Order Create";
+  pageTitle = "Order Change";
 
   constructor(
     private ordSvc: OrderService,

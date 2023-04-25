@@ -11,6 +11,6 @@ export class MenubarComponent {
     menus: Menu[] = [
       new Menu("Employee", "/employee/list"),
       new Menu("Order", "/order/list"),
-      new Menu("Login", "employees/login")
+      new Menu("Login", "/employee/login")
     ]
 }
