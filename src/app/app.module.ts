@@ -13,7 +13,8 @@ import { EmployeeLoginComponent } from './employee/employee-login/employee-login
 import { MenubarComponent } from './menu/menubar/menubar.component';
 import { OrderListComponent } from './order/order-list/order-list.component';
 import { OrderDetailComponent } from './order/order-detail/order-detail.component';
-import { OrderCreateComponent } from './order/order-create/order-create.component'
+import { OrderCreateComponent } from './order/order-create/order-create.component';
+import { OrderChangeComponent } from './order/order-change/order-change.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OrderCreateComponent } from './order/order-create/order-create.componen
     MenubarComponent,
     OrderListComponent,
     OrderDetailComponent,
-    OrderCreateComponent
+    OrderCreateComponent,
+    OrderChangeComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
